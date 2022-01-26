@@ -1,4 +1,4 @@
-# %%
+# Evaluate the JSON Data
 import enum
 import pandas as pd
 import numpy as np

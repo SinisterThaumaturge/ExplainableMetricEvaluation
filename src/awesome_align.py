@@ -139,6 +139,7 @@ for pair in dataset.items():
             scores.append( {"awesome_align_sim_scores" : [0], "align_subwords" : [0,0] })
 
         data[f"{testset}-{lp}-{system}"] = scores
+    #save alignment data for evaluation the files can become pretty big
     with open("Results17/awesomealign"+lp+".json", "w") as f:
       json.dump(data, f)
 

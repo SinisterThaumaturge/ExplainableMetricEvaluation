@@ -57,5 +57,7 @@ for pair in dataset.items():
           else:
             scores.append(([0], [0,0], [0]))
         data[f"{testset}-{lp}-{system}"] = scores
+
+    #save alignment data for evaluation the files can become pretty big
     with open("Results18/simalign" +lp+".json", "w") as f:
         json.dump(data, f)
